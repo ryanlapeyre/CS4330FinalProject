@@ -4,6 +4,7 @@
 
 ##### Example: Aggregate (left fold)
 Applies an accumulator function over a sequence
+
     double product = doubles.Aggregate(1.0, (prod, next) => prod * next);
     
 ##### Example: Filtering
