@@ -22,7 +22,7 @@ This resembles most other functional languages a lot more closely.
     Func<string, string> myFunc = var1 => "some value";
     
 #### Higher order functions
-C# provides support for higher order functions, that is, functions can return other functions receive them as parameters.
+###### C# provides support for higher order functions, that is, functions can return other functions receive them as parameters.
 
     List<b> map<a>(Func<a, b> f, List<a> list) {
       foreach (a x in list) {
@@ -43,7 +43,7 @@ C# provides support for higher order functions, that is, functions can return ot
     (5..10).reduce(1, :*)
     (5..10).inject(1) { |product, n| product * n }
 #### Currying
-Ruby provides support for currying, which is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
+###### Ruby provides support for currying, which is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
 
     apply_math = lambda do |fn, a, b|
         a.send(fn, b)
