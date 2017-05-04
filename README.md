@@ -1,5 +1,5 @@
 # CS4330 Final Project
-Ruby vs. C#
+Ruby and C# Language Comparison
 
 Ryan Lapeyre rml3md 
 
