@@ -42,3 +42,10 @@ C# provides support for higher order functions, that is, functions can return ot
     (5..10).inject { |sum, n| sum + n }
     (5..10).reduce(1, :*)
     (5..10).inject(1) { |product, n| product * n }
+#### Currying
+Ruby provides support for currying, which is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
+
+    apply_math = lambda do |fn, a, b|
+        a.send(fn, b)
+    end
+    add = apply_math.curry.(:+)
