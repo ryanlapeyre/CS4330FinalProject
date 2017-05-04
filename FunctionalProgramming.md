@@ -31,3 +31,14 @@ C# provides support for higher order functions, that is, functions can return ot
     }
 
 # Ruby 
+#### Higher order functions
+    def adder(a, b)
+        lambda { a + b }
+    end
+    adder_fn = adder(1, 2)
+    adder_fn.call
+    
+    (5..10).reduce(:+)
+    (5..10).inject { |sum, n| sum + n }
+    (5..10).reduce(1, :*)
+    (5..10).inject(1) { |product, n| product * n }
