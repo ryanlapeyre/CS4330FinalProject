@@ -14,7 +14,7 @@ There are no interfaces in Ruby. However, you can make rough substitue of them b
 
     end
 
-Then we have to implement that module in code for it to "act" as an interface, or else exceptions will occur.
+Then we have to implement the methods in that module for it to "act" as an interface, or else exceptions will occur.
 
     class User
      include CSV
