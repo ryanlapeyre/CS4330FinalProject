@@ -49,7 +49,7 @@ Namespaces in C# are not renamed to module like they are in Ruby. Other than tha
 
 
 # Ruby
-Ruby does not explicity call its namespaces "namespaces" such as in C#. However, it does implement them via modules. A module contains a group of methods for which you can call using the proper syntax. Modules in Ruby achieve this, as seen in the sample below. To implement a module in your program, you use the keyword "require" along with that module's name in quotes. You need the module name followed by the method name and parameter for it to take in when using a module. 
+Ruby does not explicity call its namespaces "namespaces" such as in C#. However, it does implement them via modules. A module contains a group of methods for which you can call using the proper syntax. Modules in Ruby achieve this, as seen in the sample below. To implement a module in your program, you use the keyword "require" along with that module's name in quotes. You need the module name followed by the method name and parameter for it to take in when using a module. Since everything is an object in Ruby, modules can only define constant objects and methods.
 
 
     module Trig //defining our "namespace" AKA module and defining its methods
