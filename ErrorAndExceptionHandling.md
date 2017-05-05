@@ -22,7 +22,7 @@ Exception handling in C# is similar to how it is handled in Java. There are thre
     
 
 # Ruby
-Compared to C#, Ruby handles errors and exception handling a bit differently.  The three keywods to be aware of are "rescue" , "ensure" , and "begin." The "begin" keyword is similar to the "try" keyword in C#, "rescue" is similar to "catch", and "ensure" is akin to "finally." "Begin" is where to start the code that is likely to cause an error. The "rescue" block takes in the error to check for, as well as what block of code to excecute when that error happens. Finally, the "ensure" code is to be used for code that will execute at the end of the "rescue" blocks. Just like in C#, you can have just one "ensure" block, or multiple "rescue" blocks, or both. A new keyword available to Ruby is the "retry" keyword, which will recheck any "rescue" instance. You can then check for the number of "retries" and then have the code continuing its usual error checking should that number raise to a certain amount. 
+Compared to C#, Ruby handles errors and exception handling a bit differently.  The three keywods to be aware of are "rescue" , "ensure" , and "begin." The "begin" keyword is similar to the "try" keyword in C#, "rescue" is similar to "catch", and "ensure" is akin to "finally." "Begin" is where to start the code that is likely to cause an error. The "rescue" block takes in the error to check for, as well as what block of code to excecute when that error happens. Finally, the "ensure" code is to be used for code that will execute at the end of the "rescue" blocks. Just like in C#, you can have just one "ensure" block, or multiple "rescue" blocks, or both. A new keyword available to Ruby is the "retry" keyword, which will recheck any "rescue" instance. You can then check for the number of "retries" in a variable and then have the code continuing its usual error checking should that variable raise to a certain amount. 
 
     //program reads in articles on Wikipedia on each year from 1900 to 2000. 
     require 'open-uri'
@@ -32,13 +32,20 @@ Compared to C#, Ruby handles errors and exception handling a bit differently.  T
 
     start_year = 1900
     end_year = 2000
+    
+    retries = 3
 
     (start_year..end_year).each do |yr|
      begin //start the code that will cause an error
        rpage = open("#{remote_base_url}/#{yr}")
      rescue StandardError=>e //specify the error type to check for and give it a parameter. 
                              // If none is specified, all error checks will occur.
-       puts "Error: #{e}"
+        if retries > 0      //checking for number of retries
+       puts "\tTrying #{retries} more times"
+       retries -= 1 // decrement the retries variable before executing another retry
+       sleep 1
+       retry
+      puts "Error: #{e}"
      else
        rdata = rpage.read
      ensure //code to be executed no matter what. 
