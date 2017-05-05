@@ -38,7 +38,7 @@ Inheritance works in the traditional sense as other programming languages. Ruby 
      end
     end
 
-     class GoodDog < Animal //GoodDog is inheriting from the animal class via this syntax, a "<" / less than sign
+     class GoodDog < Animal //GoodDog is inheriting from the animal class via this syntax, a "<" (less than sign)
       def speak
         super + " from GoodDog class" //notice the call to the parent class with the super reserved word
       end
