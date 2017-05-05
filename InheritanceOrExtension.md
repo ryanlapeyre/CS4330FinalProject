@@ -30,7 +30,7 @@ Since C# was originally based upon Java, the way it achieves inheritance is extr
 
 
 # Ruby 
-Inheritance works in the traditional sense as other programming languages. Ruby supports single inheritance, as well as overriding methods. Since Ruby is a dynamically typed language, it doesn't make sense to support overloading of methods. There can only be one method with a given name in a child class within Ruby. Other than that, Ruby is pretty traditional when it comes to inheritance. A key difference is that Ruby does not have constructors, rather is has a "initialize" method that is passed to each object. Thus you can only use the "super" keyword to call the parent class's methods. 
+Inheritance works in the traditional sense as other programming languages. Ruby supports single inheritance, as well as overriding methods. Since Ruby is a dynamically typed language, it doesn't make sense to support overloading of methods. There can only be one method with a given name in a child class within Ruby. Other than that, Ruby is pretty traditional when it comes to inheritance. A key difference is that Ruby does not have constructors, rather it has a "initialize" method that is passed to each object. Thus you can only use the "super" keyword to call the parent class's methods. 
 
     class Animal
      def speak
