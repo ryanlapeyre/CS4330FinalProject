@@ -40,11 +40,11 @@ Compared to C#, Ruby handles errors and exception handling a bit differently.  T
        rpage = open("#{remote_base_url}/#{yr}")
      rescue StandardError=>e //specify the error type to check for and give it a parameter. 
                              // If none is specified, all error checks will occur.
-        if retries > 0      //checking for number of retries
-       puts "\tTrying #{retries} more times"
-       retries -= 1 // decrement the retries variable before executing another retry
-       sleep 1
-       retry
+       if retries > 0      //checking for number of retries
+            puts "\tTrying #{retries} more times"
+            retries -= 1 // decrement the retries variable before executing another retry
+            sleep 1
+            retry
       puts "Error: #{e}"
      else
        rdata = rpage.read
