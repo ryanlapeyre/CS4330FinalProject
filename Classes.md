@@ -1,6 +1,6 @@
 # C#
 Let's take a look at this code, shall we? 
-Syntax-wise, C# is similar to Java at a glance. As usual with classes, there are access modifiers for public/private access. Defining a class is exactly the same as Java, as well as initialization. However, C# does have access to a destructor, unlike Java. To initialize and use a destructor, you simply write a "~" along with the classname and define what you wish the object to do when being destructed. The destructor imiplicity calls the Finalize method, which frees the object from memory. 
+Syntax-wise, C# is similar to Java at a glance. As usual with classes, there are access modifiers for public/private access. Defining a class is exactly the same as Java, as well as initialization. However, C# does have access to a destructor, unlike Java. To initialize and use a destructor, you simply write a "~" along with the classname and define what you wish the object to do when being destructed. The destructor imiplicity calls the Finalize method, which frees the object from memory. As note that C# does support abstract classes, and Ruby does not.
 
     public class Person
     {
