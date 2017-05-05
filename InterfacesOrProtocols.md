@@ -6,7 +6,7 @@
 
 
 # Ruby
-There are no interfaces in Ruby. However, you can make rough substitue of them by declaring a module and having that module raise exceptions when it is not implemented. 
+There are no interfaces/protocols in Ruby. However, you can make rough substitue of them by declaring a module and having that module raise exceptions when it is not implemented. 
 
     module CSV
 
@@ -20,7 +20,7 @@ There are no interfaces in Ruby. However, you can make rough substitue of them b
 
     end
 
-Then we have to implement the methods in that module for it to "act" as an interface, or else exceptions will occur.
+Then we have to implement the methods in that module for it to "act" as an interface/protocol, or else exceptions will occur.
 
     class User
      include CSV
