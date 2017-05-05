@@ -1,5 +1,5 @@
 # C#
-Namespaces in C# are not renamed to module like they are in Ruby. Other than that, namespaces work the same way they do in C++. You define a namespace and the classes/methods within it by using the "namespaces" keyword. To use that namespace, you write the "using" keyword at the top of your program. Note that namespaces can include structs, interfaces, enums, delegates, and namespaces as well.
+Namespaces in C# are not renamed to module like they are in Ruby. Other than that, namespaces work the same way they do in C++. You define a namespace and the classes/methods within it by using the "namespaces" keyword. To use that namespace, you write the "using" keyword at the top of your program. Note that namespaces can include structs, interfaces, enums, delegates, and other namespaces as well.
 
      using System; // a list of namespaces we are going to use. We are going to define the bottom two.
      using first_space;
