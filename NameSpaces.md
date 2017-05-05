@@ -31,7 +31,8 @@ Namespaces in C# are not renamed to module like they are in Ruby. Other than tha
     {
        static void Main(string[] args)
        {
-          //if we were not explicity "using" the first_space while also defining it, the class implementation below would look like
+          //if we were not explicity "using" the first_space while also defining it; 
+          //the class implementation below would look like below:
           //first_space.namespace_cl fc = new first_space.namespace_cl();
           
           abc fc = new abc(); 
