@@ -1,5 +1,5 @@
 # C#
-
+Much like Java, C# has intefaces. An interface is a list of methods that a class must implement in Java, which is almost the same as it is in C#. A key difference is that interfaces can also apply to structs in C#, which cannot be done in Java as structs do not exists.
 
 
 
