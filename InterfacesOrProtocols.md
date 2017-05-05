@@ -1,7 +1,30 @@
 # C#
-Much like Java, C# has intefaces. An interface is a list of methods that a class must implement in Java, which is almost the same as it is in C#. A key difference is that interfaces can also apply to structs in C#, which cannot be done in Java as structs do not exists.
+Much like Java, C# has intefaces. An interface is a list of methods that a class must implement in Java, which is almost the same as it is in C#. A key difference is that interfaces can also apply to structs in C#, which cannot be done in Java as structs do not exist in that language. To use an interface, you first must initialize it as an interface, and give it a name and data type that it takes in. Within that interface, you then define the interface you wish the class/struct to implement. You use the ":" and the name of the data type parameter it takes in, shoudl it need one.
 
+    interface IEquatable<T>
+    {
+        bool Equals(T obj);
+    }
 
+    public class Car : IEquatable<Car> //replace class with struct for the struct version
+    {
+        public string Make {get; set;}
+        public string Model { get; set; }
+        public string Year { get; set; }
+
+        // Implementation of IEquatable<T> interface
+        public bool Equals(Car car)
+        {
+            if (this.Make == car.Make &&
+                this.Model == car.Model &&
+                this.Year == car.Year)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+    }
 
 
 
