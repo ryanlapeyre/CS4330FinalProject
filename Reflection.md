@@ -9,7 +9,7 @@ System.Console.WriteLine(type); // System.Int32
 ```
 
 # Ruby
-- Ruby also provides reflection facilities (called "introspection")
+- Ruby also provides reflection facilities (called "introspection") to alter and examine the state and structure of programs
 
 ```
 obj.methods
