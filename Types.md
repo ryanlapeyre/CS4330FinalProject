@@ -7,7 +7,7 @@
   - Object is created in memory and then handled through a separate reference
   - Holds the memory address of a value, not the value itself
 
-Supports the following primitive types:
+C# supports the following primitive types:
 - bool
 - byte
 - sbyte
