@@ -34,3 +34,14 @@ public class Theading {
 - Ruby also supports "fibers", which behave like miniature threads
   - Fibers can be paused and resumed from outside or from within themselves
   - Fibers are more lightweight than threads - that is, they are faster and use less memory
+
+```
+fiber = Fiber.new do
+  Fiber.yield 1
+  2
+end
+
+puts fiber.resume # 1
+puts fiber.resume # 2
+puts fiber.resume # FiberError: dead fiber called
+```
