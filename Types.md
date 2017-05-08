@@ -27,7 +27,7 @@ C# supports the following primitive types:
 New value types can be created by extending System.ValueType
 
 # Ruby
-- Everything in Ruby is an object:
+Everything in Ruby is an object:
 
 - String
 - Fixnum
