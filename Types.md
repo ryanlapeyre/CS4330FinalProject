@@ -24,6 +24,19 @@ C# supports the following primitive types:
 - ushort
 - string 
 
-New value types can be created through extending System.ValueType
+New value types can be created by extending System.ValueType
 
 # Ruby
+- Everything in Ruby is an object:
+
+- String
+- Fixnum
+- Integer
+- Numeric
+- Float
+- Numeric
+- NilClass
+- Hash
+- Symbol
+- Array
+- Range
